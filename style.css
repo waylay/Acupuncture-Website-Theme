@@ -1,0 +1,63 @@
+/*
+	Theme Name: Orlando Acupuncture Theme
+	Version: 1.0
+	Theme URI: http://webcodesigner.com/category/code/themes/
+	Description: WordPress Theme for orlando Acupuncture website. Child-theme for the Depilex theme.
+	Author: Cristian Ionel
+	Author URI: https//webcodesigner.com
+	License: GNU General Public License v2.0
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Template: depilex
+*/
+
+/* ================================================================
+     GLOBAL STYLES - Start your custom styles from below
+=================================================================== */
+.navigation .navbar-nav {
+    margin-top: 20px;
+}
+.navbar-default.transparent .navbar-nav>li>a {
+    color: #613A86 !important;
+}
+.navbar-default.transparent.sticky{
+	background-color: #fff !important;
+	box-shadow: 0 0 1px 0 #613A86;
+}
+.navbar-header img{
+  margin:15px 0 0 0;
+}
+.navbar-default.transparent li>.dropdown-menu{
+	padding: 0;
+}
+@media (min-width: 768px){
+	.navbar-default.transparent .navbar-nav>li>a {
+	    padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px){
+	.navigation .navbar{
+		min-height: auto;
+		padding-bottom: 12px;
+	}
+	.navbar-header img{
+    max-width: 270px;
+    margin: 10px 0 0 15px;;
+	}
+	.navbar-toggle {
+    margin-top: 10px;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+	}
+	#main-navigation {
+    margin-top: 12px !important;
+	}
+	.navigation .navbar-default.transparent {
+	  background-color: #fff !important;
+		box-shadow: 0 0 1px 0 #613A86;
+	}
+	.navigation .navbar-default .navbar-nav>li>a{
+		padding: 10px 30px;
+	}
+}
