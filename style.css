@@ -13,26 +13,156 @@
 /* ================================================================
      GLOBAL STYLES - Start your custom styles from below
 =================================================================== */
+/* GENERAL */
+a, a:visited{
+  color:#6e0f7d;
+}
+a:hover{
+  text-decoration: underline;
+}
+/* HEADER */
 .navigation .navbar-nav {
     margin-top: 20px;
 }
-.navbar-default.transparent .navbar-nav>li>a {
+.navbar.navbar-default .navbar-nav>li>a {
     color: #613A86 !important;
 }
-.navbar-default.transparent.sticky{
+.navbar.navbar-default.sticky{
 	background-color: #fff !important;
-	box-shadow: 0 0 1px 0 #613A86;
+	box-shadow: 0 0 1px 0 #ac82d4;
 }
 .navbar-header img{
   margin:15px 0 0 0;
 }
-.navbar-default.transparent li>.dropdown-menu{
+.navbar.navbar-default li>.dropdown-menu{
 	padding: 0;
 }
+.navigation-2 .navbar-default, .header-area{
+  background-color: #fff;
+}
+.navigation-2 .navbar-default .navbar-nav>li>a,
+.header-area .logo-bar .info-box .icon{
+  color: #222;
+}
+.header-area .logo-bar .info-box .icon{
+  top:0;
+}
+.header-area .logo-bar .info-box{
+  padding-top: 0;
+}
+.post-content ul{
+  list-style: disc;
+  padding-left: 1em;
+}
+
+/* HEADING */
+.breadcrumb-image{
+  background-position: right -180px !important;
+}
+.page-heading::after{
+  background: transparent;
+}
+.page-heading_content h1,
+.page-heading_content .bredcrumbs,
+.page-heading_content .bredcrumbs a{
+  color: #613a86;
+}
+
+
+/* VC Elements */
+.section-title p{
+  width: 75%;
+}
+.choose-box-content h4:hover{
+  cursor: auto;
+}
+.choose-box-content p{
+  font-size: 90%;
+}
+
+.iconbox i, .choose-box-content h4{
+  color: #613a86 !important;
+  letter-spacing: 1px;
+}
+
+.service-tab li span{
+  font-size: 14px;
+}
+
+.service-tab .tab-pane img{
+  width: 100%;
+}
+
+.funfacts img{
+  margin: 50px auto;
+}
+
+
+/* Ninja Forms */
+.ninja-forms-required-items {
+  display: none;
+}
+.ninja-forms-cont {
+  padding: 20px 25px 20px;
+  background-color: #e7ece5;
+  border: 1px solid #dde4db;
+}
+.ninja-forms-cont label{
+  letter-spacing: 2px;
+}
+
+.ninja-forms-cont input[type="submit"]{
+  color: #fff;
+  background-color: #222;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 14px 25px;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+.ninja-forms-cont input[type="submit"]:hover{
+  background-color: #613a86;
+}
+
+.ninja-forms-form-wrap input, .ninja-forms-form-wrap select, .ninja-forms-form-wrap textarea{
+  padding: 5px 10px;
+  color: #613a86;
+  font-weight: bold;
+  border: 1px solid #dde4db;
+  font-size: 2em;
+}
+/* Laptops */
+@media (min-width: 768px) and (max-width: 1024px){
+	.container>.navbar-header {
+	    width: 100%;
+      text-align: center;
+	}
+  .container>.navbar-header img{
+    margin: 0;
+  }
+  .navbar-collapse{
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  .navigation .navbar-nav{
+    margin-top: 10px;
+    width: 100%;
+  }
+  .navigation .navbar-nav li{
+    float: none;
+    display: inline-block;
+  }
+}
+
 @media (min-width: 768px){
-	.navbar-default.transparent .navbar-nav>li>a {
+	.navbar.navbar-default .navbar-nav>li>a {
 	    padding-bottom: 20px;
 	}
+  .dropdown-menu{
+    z-index: 1;
+  }
 }
 
 @media (max-width: 767px){
@@ -53,11 +183,17 @@
 	#main-navigation {
     margin-top: 12px !important;
 	}
-	.navigation .navbar-default.transparent {
+	.navigation .navbar-default {
 	  background-color: #fff !important;
 		box-shadow: 0 0 1px 0 #613A86;
 	}
 	.navigation .navbar-default .navbar-nav>li>a{
 		padding: 10px 30px;
 	}
+  .navigation .navbar-default .container .navbar-collapse{
+    border-color: #ddd !important;
+  }
+  strong{
+    font-size: inherit;
+  }
 }
